@@ -1,0 +1,55 @@
+\documentclass[12pt]{lettre}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[frenchb]{babel}
+
+ % Suppression du trait de pliage
+\makeatletter
+\newcommand*{\NoRule}{\renewcommand*{\rule@length}{0}}
+\makeatother
+% Creation de 'Objet'
+\def\concname{Objet :~}
+
+ 
+\begin{document}
+\begin{letter}{Futur boulot}
+
+  % Coordonnées
+  \name{Hoel IRIS}
+  \signature{Hoel IRIS}
+  \address{Hoel IRIS\\
+  28 place de l'An 2000\\
+  77380 Combs-la-ville\\
+  Tel : 06 18 39 30 11\\
+  E-Mail : hoel.iris@gmail.com}
+  \lieu{Paris}
+  \NoRule
+  \notelephone
+  \nofax
+
+
+    \conc{Candidature spontanée}
+    \opening{Madame, Monsieur,}
+    
+    Diplômé Ingénieur Informatique de l’école Phelma-Ensimag Grenoble INP en juillet 2012, je souhaite poursuivre mon projet professionnel au sein de votre entreprise.
+
+    Le Projet de Fin d’Etude de six mois que j’ai effectué au sein du laboratoire « Intégration et Atelier Logiciel pour Puces » du CEA, ainsi que mon  stage de seconde année réalisé dans l’entreprise ST Microelectronics m’ont apporté une expérience diversifiée des réseaux de capteurs venant s’ajouter à ma formation en Systèmes et Logiciels Embarqués. 
+
+    Les problématiques naissantes ainsi que les nouvelles technologies abordées durant ces deux projets ont continuellement nourri ma curiosité, mon dynamisme et ma volonté de travailler en équipe. 
+
+    Par ailleurs, ma formation d’ingénieur contribue à entretenir une rigueur personnelle ainsi que le sens des responsabilités et me permet aujourd’hui d’appréhender un projet dans sa globalité.
+
+    Convaincu de la richesse du secteur d’activité de votre entreprise, ainsi que de la valeur ajoutée des solutions que vous proposez, je serais particulièrement motivé par le fait d’intégrer votre équipe. 
+
+    Je me tiens à votre disposition pour toutes informations complémentaires et pour un futur entretien.
+    %En vous remerciant d’avoir prêté attention à ma candidature, je vous prie de croire, Madame, Monsieur, à l’expression de mes sentiments les plus respectueux.
+
+    
+    \closing{En vous remerciant d’avoir prêté attention à ma candidature, je vous prie de croire, Madame, Monsieur, à l’expression de mes sentiments les plus respectueux.}
+    \encl{CV}
+ 
+\end{letter}
+ 
+\end{document}
