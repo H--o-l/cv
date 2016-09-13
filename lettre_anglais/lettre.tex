@@ -1,0 +1,67 @@
+\documentclass[11pt]{lettre}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{eurosym}
+\usepackage[frenchb]{babel}
+\usepackage{etoolbox}
+
+% The default value of \openingspace is 1cm.
+% Instead of -\openingspace use the length you prefer
+% for instance -0.5cm or whatever
+\patchcmd{\letteropening}{2\openingspace}{-0.5cm}{}{}
+
+
+
+ % Suppression du trait de pliage
+\makeatletter
+\newcommand*{\NoRule}{\renewcommand*{\rule@length}{0}}
+\makeatother
+
+\sigspace=5pt
+
+ 
+\begin{document}
+\begin{letter}{CybelAngel}
+
+  % Creation de 'Objet'
+  \def\concname{Objet :~}
+
+
+  % Coordonnées
+  \name{Hoel IRIS}
+  \signature{Hoel IRIS}
+  \address{Hoel IRIS\\
+  54 avenue Mathurin Moreau\\
+  75019 Paris\\
+  Tel : 06 18 39 30 11\\
+  E-Mail : hoel.iris@gmail.com}
+  \lieu{Paris}
+  \NoRule
+  \notelephone
+  \nofax
+    \conc{Submission for software engineer position at Paris}
+    \opening{Hi there,}
+      
+      I submit my candidature for software engineer position.
+      I work 3 years in embedded systems for automatic subways in Alstom company.
+      I barely meet the requirements for your position, I develop C programs but never C++ or java outside school.
+      Moreover algorithms is not really a thing in embedded system, not in the usual way at least. Recursive calls, big stack and dinamyc allocations aren't allowed. 
+      Nevertheless I participation in software design, software optimization and continious integration.  
+      I almost demonstrate that I am a quick learner, foreign langages at side.
+      Finally I have some personnal projects, never go very to far but I build some knwoledge on linux, python and home automation that way.
+       
+      I think I match the google phylosophy. I am not the smartest person in the world but I am driven by curiosity, and with all the things to learn in the world we can't ever be borred.
+      I like to try new trechnique, work with other and learn from them. Use the good idea from outside and find how to make them work efficiently as developping my own solution.
+      But the most, I like that technics help humanity do better and help people in their everyday life.
+      I am never happiest than felling usefull, developping new solution, sorrunded by a motivated team, some music in the hear and an editor in front of me.
+          
+    \closing{Thanks for reading me, yours faithfully,}
+    
+% PJ :
+%    \encl{CV}
+ 
+\end{letter}
+ 
+\end{document}
