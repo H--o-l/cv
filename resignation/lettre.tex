@@ -1,0 +1,62 @@
+\documentclass[11pt]{lettre}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{eurosym}
+\usepackage[frenchb]{babel}
+\usepackage{etoolbox}
+
+% The default value of \openingspace is 1cm.
+% Instead of -\openingspace use the length you prefer
+% for instance -0.5cm or whatever
+\patchcmd{\letteropening}{2\openingspace}{-0.5cm}{}{}
+
+
+
+ % Suppression du trait de pliage
+\makeatletter
+\newcommand*{\NoRule}{\renewcommand*{\rule@length}{0}}
+\makeatother
+
+\sigspace=5pt
+
+ 
+\begin{document}
+\begin{letter}{ClearSy\\320 Av. Archimède\\Les Pléïades III bâtiment A\\13857 Aix-en-Provence Cedex 3 }
+
+  % Creation de 'Objet'
+  \def\concname{Objet :~}
+
+  \date{le 2 décembre 2016}
+  
+  % Coordonnées
+  \name{Hoel IRIS}
+  \signature{Hoel IRIS}
+  \address{Hoel IRIS\\
+  54 avenue Mathurin Moreau\\
+  75019 Paris}
+  \lieu{Paris}
+  \NoRule
+  \notelephone
+  \nofax
+    \conc{Démission}
+    \opening{Madame, Monsieur,\\}
+    Je soussigné Hoël IRIS, vous présente ma démission du poste d'Ingénieur que j'occupe dans l'entreprise ClearSy depuis le 26 novembre 2012, et ce à compter de la date du présent courrier.
+
+    J'ai bien noté que les termes de la convention collective Syntec prévoient un préavis d'une durée de trois mois. 
+    
+    Cependant, et par dérogation, je sollicite une dispense partielle de ce préavis visant à le ramener à une durée de trois mois moins six jours ouvrés au lieu de trois mois. 
+    
+    Dans cette hypothèse, et en considérant:\\
+    - sept jours de congés payés validés sur la période,\\
+    - cinq jours de congés payés à venir sur le mois de févier,\\
+    mon contrat de travail expirerait le 10 mars 2017.
+    \\\\\\
+    A la date de mon départ, je vous demanderai de bien vouloir me transmettre un reçu pour solde de tout compte, un certificat de travail ainsi qu'une attestation Pôle emploi. 
+    
+    \closing{Je vous prie de croire, Madame, Monsieur, à l’expression de mes sentiments les plus respectueux.}
+    
+\end{letter}
+ 
+\end{document}
